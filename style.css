@@ -1,0 +1,67 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Contenedor del tablero */
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    gap: 15px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de los bloques de colores */
+.color {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.color:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.celeste {
+    background-color: lightblue;
+}
+
+.violeta {
+    background-color: violet;
+}
+
+.naranja {
+    background-color: orange;
+}
+
+.verde {
+    background-color: green;
+}
+
+/* Botón de inicio */
+.btn-start {
+    grid-column: span 2;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-start:hover {
+    background-color: #555;
+}
